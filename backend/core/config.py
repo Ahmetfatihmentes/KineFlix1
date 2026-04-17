@@ -12,6 +12,8 @@ class Settings(BaseSettings):
 
     DATABASE_URL: str = _DEFAULT_SQLITE_URL
     DEBUG: bool = True
+    TMDB_READ_ACCESS_TOKEN: str | None = None
+    TMDB_API_KEY: str | None = None
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
 

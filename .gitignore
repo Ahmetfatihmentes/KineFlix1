@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+
+.coverage
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+env/
+
