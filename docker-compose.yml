@@ -1,0 +1,18 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kineflix-backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////app/data/kineflix.db
+      DEBUG: "false"
+    volumes:
+      - kineflix-sqlite:/app/data
+    restart: unless-stopped
+
+volumes:
+  kineflix-sqlite:
+    driver: local

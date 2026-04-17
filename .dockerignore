@@ -1,0 +1,42 @@
+# Virtual environment & Python
+.venv
+venv
+env
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info
+.eggs
+dist
+build
+
+# Git & IDE
+.git
+.gitignore
+.cursor
+.idea
+.vscode
+*.swp
+*.swo
+
+# Tests & coverage (imajda gerekmez; istenirse ayrı test imajı kullanılır)
+.pytest_cache
+.coverage
+coverage.xml
+htmlcov
+.tox
+
+# Yerel SQLite ve veri (konteyner volume kullanır)
+*.db
+data/
+
+# Çevre ve gizli dosyalar
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
